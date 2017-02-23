@@ -64,7 +64,7 @@ int main(){
     cl::Buffer buffer_B(context,CL_MEM_READ_WRITE,sizeof(int)*10);
     cl::Buffer buffer_C(context,CL_MEM_READ_WRITE,sizeof(int)*10);
  
-    int A[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int A[] = {0, 1, 255, 3, 4, 5, 6, 7, 8, 9};
     int B[] = {0, 1, 2, 0, 1, 2, 0, 1, 2, 0};
  
     //create queue to which we will push commands for the device.
